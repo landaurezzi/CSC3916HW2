@@ -77,7 +77,7 @@ router.post('/signin', function (req, res) {
 
     router.route('/movies')
     //unauthenticated
-    .get(function(res, req) {
+    .get(function(req, res) {
         console.log(req.body);
         //status 200 and message
         res = res.status(200);
@@ -89,7 +89,7 @@ router.post('/signin', function (req, res) {
     )
 
     //unathenticated
-    .post(function(res, req) {
+    .post(function(req, res) {
         console.log(req.body);
         //status 200 and message
         res = res.status(200);
@@ -101,7 +101,7 @@ router.post('/signin', function (req, res) {
     )
 
     //authenticated
-    .put(authJwtController.isAuthenticated, function(res, req) {
+    .put(authJwtController.isAuthenticated, function(req, res) {
         console.log(req.body);
         //status 200 and message
         res = res.status(200);
@@ -117,7 +117,7 @@ router.post('/signin', function (req, res) {
     )
 
     //authenticated
-    .delete(authController.isAuthenticated, function(res, req) {
+    .delete(authController.isAuthenticated, function(req, res) {
         console.log(req.body);
         //status 200 and message
         res = res.status(200);
