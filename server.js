@@ -111,7 +111,7 @@ router.post('/signin', function (req, res) {
         if (req.get('Content-Type')) {
             res = res.type(req.get('Content-Type'));
         }
-        var o = getJSONObjectForMovieRequirement(req);
+        //var o = getJSONObjectForMovieRequirement(req);
         res.json(o);
     }
     )
@@ -127,7 +127,7 @@ router.post('/signin', function (req, res) {
         if (req.get('Content-Type')) {
             res = res.type(req.get('Content-Type'));
         }
-        var o = getJSONObjectForMovieRequirement(req);
+        //var o = getJSONObjectForMovieRequirement(req);
         res.json(o);
     }
     )
